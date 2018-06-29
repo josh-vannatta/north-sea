@@ -1,0 +1,55 @@
+.testimonials {
+  .featured-in {
+    img {
+      opacity: .3;
+      width: 100%;
+      transition: .3s ease;
+    }
+    &:hover {
+      img{
+        opacity: .6;
+      }
+    }
+    .selector {
+      transition: .3s ease;
+      font-size: 28px;
+      opacity: 0;
+      transform: scale(0.01) translateY(-10px);
+      left: 0;
+    }
+  }
+  .featured-in.active {
+    img{
+      opacity: .8;
+    }
+    .selector {
+      opacity: 1;
+      transform: scale(1) translateY(0px);
+    }
+  }
+  .t-content > div {
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  .content {
+    font-size: 3.5rem !important;
+  }
+}
+
+.big-ass-quotes {
+  font-size: 50px;
+  opacity: 1;
+  position: absolute;
+  color: $big-ass-quotes;
+}
+
+.left.big-ass-quotes {
+  top: 0;
+  left: -50px;
+}
+
+.right.big-ass-quotes {
+  right: -50px;
+  bottom: 0;
+}

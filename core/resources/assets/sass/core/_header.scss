@@ -1,0 +1,80 @@
+.core-header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+
+  nav {
+    background: $core-header !important;
+    box-shadow: 0 0;
+  }
+
+  .navbar-brand {
+    letter-spacing: 6px;
+    font-weight: 800;
+    font-family: $core-icon;
+    position: unset;
+    img {
+      height: 30px;
+      margin-right: 5px;
+    }
+  }
+
+  .navbar-nav {
+    letter-spacing: 2px;
+    border-left: 1px solid white;
+    .nav-item {
+      margin: 0 5px;
+      .nav-link {
+         padding-top: 11px;
+        font-size: 13px;
+        margin-right: .6rem;
+        font-weight: 500;
+        transition: .2s ease;
+        &::after {
+          bottom: -11px;
+          height: 3px;
+        }
+       }
+       .carat-down {
+         left: -.8rem;
+         transition: .2s ease;
+       }
+    }
+  }
+
+  .navbar-cart-applet {
+    min-width: 250px;
+
+    .search-form {
+      transition: .3s ease;
+      overflow: hidden;
+      max-width: 20px;
+      .fa-search { opacity: .5 }
+      &:hover, &:focus-within {
+        max-width: 180px;
+        .fa-search { opacity: .8 }
+      }
+    }
+
+    .search-control input:focus {
+      border-color: white;
+    }
+
+    .cart-control {
+      cursor: pointer;
+      * { transition: .2s ease }
+      .fa-shopping-cart {
+        opacity: .5;
+        font-size: 18px;
+      }
+      p { opacity: .5 }
+      &:hover {
+        .fa-shopping-cart {
+          opacity: .8;
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,39 @@
+// Colors
+$paper: #f5f8fa;
+$light-grey: #e8e8e8;
+$midnight-blue: #090d10;
+$bright-orange: #ff931e;
+$danger: #f44336;
+$black: black;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-header: "Montserrat", "Raleway", sans-serif;
+$core-icon: $font-family-header;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$big-ass-quotes: $bright-orange;
+$text-regular: #3a3a3a;
+$link: #2c9ab7;
+
+// Base
+$body-bg: $paper;
+$select-focus: green;
+$post-bg: white;
+$overlay: rgba(8, 13, 15, 0.5);
+@function transition($speed) {
+  @return all $speed cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+// Components
+$video-track: rgba(255,255,255,.3);
+$video-thumb: $bright-orange;
+
+// Buttons
+$btn-attention: $bright-orange;
+
+// Core
+$core-header: black;
+$core-subheader: white;
+$core-categories: white;
+$core-footer: black;
+$core-copyright: black;

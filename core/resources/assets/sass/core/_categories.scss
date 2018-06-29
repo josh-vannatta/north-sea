@@ -1,0 +1,14 @@
+.core-categories {
+  background-color: $core-categories;
+  nav {
+    font-weight: 500;
+    font-size: 16px;
+    a {
+      color: #090d10;
+      opacity: .5;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

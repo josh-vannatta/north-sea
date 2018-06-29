@@ -1,0 +1,66 @@
+.btn {
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  font-family: "Montserrat" !important;
+}
+
+.no-btn {
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.btn-lg {
+  font-size: 16px  !important;
+  padding: 1rem 2.5rem  !important;
+}
+
+.btn-attention {
+  background-color: $btn-attention !important;
+  box-shadow: 0 0;
+}
+
+.btn-attention:hover {
+  color: white !important;
+  box-shadow: inset 0 0 0 4px white !important;
+}
+
+.btn-dense {
+  padding: .9rem 2rem;
+  border-width: 2px !important;
+}
+
+.btn-swipe {
+  position: relative;
+}
+
+.btn-swipe::after {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: white;
+  transition: .2s ease;
+}
+
+.btn-outline-light:hover {
+  background: white !important;
+  color: #3a3a3a !important;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0 !important;
+  right: 0 !important;
+  opacity: .6;
+  margin: 10px !important;
+  font-size: 15px !important;
+  padding: 1rem !important;
+  line-height: 1rem !important;
+  border-radius: 50% !important;
+  background: rgba(0,0,0,0);
+  transition: transition(.3s);
+  &:hover {
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+  }
+}

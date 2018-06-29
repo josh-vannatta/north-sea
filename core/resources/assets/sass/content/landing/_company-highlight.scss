@@ -1,0 +1,21 @@
+.company-highlight {
+  max-width: 1920px;
+  margin: 0 auto;
+  .featured-content {
+    min-height: 500px;
+    background: #ddd;
+    overflow: hidden;
+    .movers {
+      transform: scale(.8) skew(-15deg);
+    }
+    figure {
+      transition: 1s ease;
+      transform: scale(1);
+    }
+    &:hover {
+      figure {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

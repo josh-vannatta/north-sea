@@ -1,0 +1,86 @@
+.header-submenu {
+  background: $core-subheader !important;
+  border-bottom: 1px solid #999;
+  overflow: none;
+  padding-left: 260px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid black;
+  padding-right: 3rem;
+  transform: translate3d(0,0,0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: transition(.5s);
+  nav, .content {
+    transition: transition(.3s);
+  }
+  .content {
+    position: relative;
+    left: 0;
+  }
+  nav {
+    background: $core-subheader !important;
+    a {
+      color: inherit;
+      display: inline-block;
+     padding-bottom: .5rem;
+      opacity: .5;
+      transition: transition(.3s);
+      margin-right: 2rem;
+      &:hover {
+        opacity: .9;
+      }
+    }
+    a.active {
+      opacity: 1;
+    }
+  }
+  .shop-section {
+    padding-right: 5rem;
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+  .shop-figure {
+    width: 100%;
+    position: relative;
+    img {
+      transition: transition(.3s);
+      position: relative;
+      top: 0;
+      height: 160px;
+    }
+  }
+  .hover .shop-figure {
+    img {
+      top: -10px;
+    }
+  }
+  .control {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 250px;
+    img {
+      transition: transition(.3s);
+      opacity: .5;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  .control-left {
+    background: linear-gradient(to right, rgba(255,255,255,0.7), 90%, rgba(255,255,255,0));
+    left: 0;
+  }
+  .control-right {
+    background: linear-gradient(to left, rgba(255,255,255,0.7), 90%, rgba(255,255,255,0));
+    right: 0;
+  }
+}
+
+.header-submenu.active {
+  transform: translate3d(0,100%,0);
+}
